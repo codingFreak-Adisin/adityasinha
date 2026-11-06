@@ -256,7 +256,7 @@
     el.className = 'bar' + (b.href || b.links ? ' bar-link' : '');
     if (b.href) { el.href = b.href; el.target = '_blank'; el.rel = 'noopener'; }
     if (b.links) { el.type = 'button'; el.setAttribute('aria-haspopup', 'true'); el.setAttribute('aria-expanded', 'false'); }
-    el.innerHTML = `${i === 0 ? '<span class="mascot bm2" data-mascot data-color="orange" data-track></span>' : ''}<span class="val">${b.d}</span><div class="blocks">${blocks}</div><div class="bar-l"><b>${b.l}${b.href || b.links ? ' <span class="bar-go">↗</span>' : ''}</b><small>${b.u}</small></div>`;
+    el.innerHTML = `${i === 0 ? '<span class="bm2"><img src="assets/me-chart.jpg" alt="" /></span>' : ''}<span class="val">${b.d}</span><div class="blocks">${blocks}</div><div class="bar-l"><b>${b.l}${b.href || b.links ? ' <span class="bar-go">↗</span>' : ''}</b><small>${b.u}</small></div>`;
     if (b.links) {
       const pop = document.createElement('div');
       pop.className = 'bar-pop';
